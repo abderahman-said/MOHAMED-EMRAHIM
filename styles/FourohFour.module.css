@@ -1,0 +1,17 @@
+.PageFour {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.PageFour a {
+    /* display: block; */
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    border-radius: 10px;
+    padding: 10px 15px;
+    background-color: var(--main_color);
+    margin: 20px 0;
+}

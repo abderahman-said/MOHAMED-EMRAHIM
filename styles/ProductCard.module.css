@@ -1,0 +1,347 @@
+.matgercard {
+  margin: 10px;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+.Dialog_Product_info p{
+  width: 80%;
+}
+
+/* .matgerimageCard {
+  position: relative;
+  width: 100%;
+  min-height: 200px;
+  max-height:200px;
+  overflow: hidden;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.Dialog_Product_info {
+  margin-right: 10px;
+}
+.Dialog_Product_info p {
+  width: 95%;
+}
+.par{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  z-index: 3;
+  font-size: 20px;
+  font-weight: bold;
+  transform: translate(-50% , -50%);
+  -webkit-transform: translate(-50% , -50%);
+  -moz-transform: translate(-50% , -50%);
+  -ms-transform: translate(-50% , -50%);
+  -o-transform: translate(-50% , -50%);
+  text-align: center;
+}
+
+.info {
+  background-color: white;
+  box-shadow: 0 3px 12px #0000002e;
+  border-radius: 50px 6px 6px 50px;
+  -webkit-border-radius: 50px 6px 6px 50px;
+  -moz-border-radius: 50px 6px 6px 50px;
+  -ms-border-radius: 50px 6px 6px 50px;
+  -o-border-radius: 50px 6px 6px 50px;
+  padding: 15px 10px;
+  cursor: pointer;
+  margin:  0 auto;
+  position: relative;
+  margin: 10px 0;
+}
+
+.logoIm {
+  position: absolute;
+  left:-10px;
+  top: 59%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  overflow: hidden;
+}
+.logoIm  img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.phar {
+  text-align: right;
+  margin: 0;
+} */
+/* .info2 {
+
+} */
+.phar2 {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/*  start productCard */
+
+.productCard {
+  margin: 20px 0;
+}
+.parent {
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.imageCard {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto;
+  cursor: pointer;
+  background-color: white;
+}
+.imageCard img {
+  height: auto !important;
+}
+
+.imageCard::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--main_color);
+  border-bottom-color: transparent;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  animation: rotating 2s linear infinite;
+}
+
+/* .loadingImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--main_color);
+  border-bottom-color: transparent;
+  z-index: -1;
+  transform: translate(-50%,-50%);
+  animation: rotating 2s linear infinite;
+} */
+/* .loadingImage2 {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--main_color);
+  border-bottom-color: transparent;
+  z-index: -1;
+  transform: translate(-50%,-50%);
+  animation: rotating 2s linear infinite;
+} */
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.name {
+  cursor: pointer;
+  /* width: 60%; */
+  margin: 0;
+  text-align: center;
+  display: block;
+}
+
+.name:hover {
+  color: black;
+}
+
+/* 
+@media (min-width: 1024px) and (max-width: 1400px) { 
+  .imageCard {
+    width: 200px !important;
+    height: 200px !important;
+  }
+ }
+
+ @media (min-width: 1401px) and (max-width: 2000px) { 
+  .imageCard {
+
+    height: 300px !important;
+  }
+ }
+ @media (min-width: 2001px) and (max-width: 2500px) { 
+  .imageCard {
+
+    height: 300px !important;
+  }
+ }
+ @media (min-width: 2500px) and (max-width: 3000px) { 
+  .imageCard {
+    height: 400px !important;
+  }
+ }
+ @media (min-width: 3000px) and (max-width: 4000px) { 
+  .imageCard {
+ 
+    height: 500px !important;
+  }
+ }
+ @media (min-width: 4000px)  { 
+  .imageCard {
+
+    height: 600px !important;
+  }
+ }
+ @media (min-width: 6000px)  { 
+  .imageCard {
+    height: 800px !important;
+  }
+ }
+@media (min-width: 576px) and (max-width: 1024px) { 
+  .imageCard {
+    width: 180px !important;
+    height: 180px !important;
+  }
+  } */
+@media (min-width: 10px) and (max-width: 765.98px) {
+  .productCard {
+    margin: 10px 0;
+  }
+
+  /* .matgerimageCard {
+    min-height: 100px;
+  }
+
+  .imageCard {
+    width: 125px;
+    height: 125px;
+  } */
+
+  .name {
+    font-size: 12px;
+  }
+
+  .viewBtn {
+    
+    min-width: 150px;
+    margin: 10px auto !important;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  }
+}
+
+.productCard:hover .icons {
+  display: flex;
+  transform: translate(-50%, 0);
+  opacity: 1;
+}
+
+/* .addIcon {} */
+.icons {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  z-index: 99;
+  transform: translate(-50%, 108%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: all 0.3s;
+
+}
+
+.icons span {
+  background-color: black;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.icons svg {
+  color: white;
+  font-size: 25px;
+}
+
+.viewBtn {
+  /* background-color: #7760f9; */
+  background-color: #462cd9;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-weight: bold;
+  margin: 0px 50px;
+  display: block;
+}
+
+.counter {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.Product_Count {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Product_Count button {
+  background-color: transparent;
+  /* padding: 5px 15px; */
+  border-radius: 1px;
+  border: none;
+  font-size: 20px;
+
+}
+
+.add_to_cart_button {
+  background-color: #462cd9;
+  color: white;
+  border: none;
+  /* background-color: black; */
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.count_input {
+  padding: 10px 5px;
+  text-align: center;
+}
+/* 
+.lastPro .imageCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .DIalog_content .imageCard {
+  width: unset !important;
+} */
+.lastPro .productCard {
+  width: 90%;
+}

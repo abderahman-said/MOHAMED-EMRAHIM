@@ -1,0 +1,222 @@
+.Mcp {
+    padding-top: 130px !important;
+  }
+  .Tabel {
+    margin-top: 50px;
+  }
+/* .Cats{
+    padding-top: 120px;
+} */
+.Tabel td  , .Tabel th  {
+    /* text-align: center !important; */
+    align-items: center;
+    justify-content: center;
+    /* cursor: pointer !important; */
+}
+.imageCOntainer {
+ margin: 0 8px;
+    /* width: 50px; */
+}
+.imageCOntainer  img{
+    /* width: 100%; */
+    /* margin: 0 5px; */
+    border-radius: 50%;
+}
+.ButnsSection {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    margin: 20px auto;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.ButnsSection button {
+    background-color: var(--main_color) !important;
+    border: none;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px 30px;
+}
+.Dialog_Content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+.input_Section {
+    width: 100%;
+    padding: 10px;
+}
+.input_Section input {
+    width: 80%;
+    padding: 5px;
+    margin: 5px 10px;
+}
+.input_Section label {
+    font-weight: bold;
+    margin-left: 15px;
+    width: 10%;
+}
+.select_div {
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.select_div input {
+    margin-right: 20px;
+}
+.select_div label {
+    font-weight: bold;
+}
+
+.labelcheck {
+    margin-right: 10px;
+    /* font-weight: bold; */
+}
+.DialogDrop {
+    margin: 10px 0;
+}
+.activeBtn {
+    background-color: transparent;
+    border: none;
+    background-color: var(--main_color);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+.input_Section textarea {
+    width: 100%;
+}
+.DateSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Date {
+    margin: 10px;
+}
+.Date label {
+    margin-left: 10px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+}
+@media (max-width: 767.98px) { 
+    .header {
+      justify-content: center;
+    }
+   }
+  
+.tabel {
+    width: 100%;
+    text-align: center;
+    display: table;
+}
+.tabel tr  {
+    width: 100%;
+  
+    /* display: table; */
+}
+.tabel tr th , .tabel tr td {
+    padding: 10px;
+}
+.tabel thead tr {
+    background-color: rgb(230, 230, 230);
+}
+.fotter_Btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fotter_Btn button {
+    background-color: var(--main_color) !important;
+    color: white !important;
+    margin: 0 50px;
+}
+
+.DeletDIalog{
+    display: flex;
+     justify-content:space-evenly;
+    align-items: center;
+}
+.imageLabel {
+    border: 1px solid var(--text_color);
+    padding: 10px;
+    cursor: pointer;
+}
+.ImageDelete {
+    position: relative;
+    margin: 5px;
+}
+.ImageDelete svg {
+    position: absolute;
+    color: red;
+    top: 0;
+    right: 0;
+    cursor:pointer;
+}
+.select_div .image_container {
+    display: flex;
+    align-items: center;
+}
+/* .Dialog_Content_Pdf {
+    min-height: 100vh;
+}
+.Pdf {
+    height: 100vh;
+} */
+/* .Cats th div {
+    justify-content: center;
+}
+.selectCats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-demo .p-dropdown {
+    width: 14rem;
+}
+
+.dropdown-demo .country-item-value img.flag {
+    width: 17px;
+}
+.datatable-filter-demo .p-paginator .p-paginator-current {
+    margin-left: auto;
+}
+.datatable-filter-demo .p-progressbar {
+    height: 0.5rem;
+    background-color: #d8dadc;
+}
+.datatable-filter-demo .p-progressbar .p-progressbar-value {
+    background-color: #607d8b;
+}
+.datatable-filter-demo .p-datepicker {
+    min-width: 25rem;
+}
+.datatable-filter-demo .p-datepicker td {
+    font-weight: 400;
+}
+.datatable-filter-demo .p-datatable.p-datatable-customers .p-datatable-header {
+    padding: 1rem;
+    text-align: left;
+    font-size: 1.5rem;
+}
+.datatable-filter-demo .p-datatable.p-datatable-customers .p-paginator {
+    padding: 1rem;
+}
+.datatable-filter-demo .p-datatable.p-datatable-customers .p-datatable-thead > tr > th {
+    text-align: left;
+}
+.datatable-filter-demo .p-datatable.p-datatable-customers .p-datatable-tbody > tr > td {
+    cursor: auto;
+}
+.datatable-filter-demo .p-datatable.p-datatable-customers .p-dropdown-label:not(.p-placeholder) {
+    text-transform: uppercase;
+} */

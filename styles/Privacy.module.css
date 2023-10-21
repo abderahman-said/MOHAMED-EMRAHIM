@@ -1,0 +1,9 @@
+.container {
+  padding-top: 120px;
+  direction: ltr;
+}
+
+.privacy  li {
+  margin-bottom: 20px ;
+  display: block;
+}

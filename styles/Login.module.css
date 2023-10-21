@@ -1,0 +1,81 @@
+.login {
+  padding: 50px 0;
+  /* display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; */
+}
+
+.mainHeading {
+  color: #C72527;
+  font-size: 25px;
+  text-align: center;
+}
+
+.row_center {
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .Container {
+  
+} */
+
+.inputDiv {
+  display: flex;
+  flex-direction: column;
+  margin:20px 0;
+  color: var(--text_color);
+}
+
+.inputDiv label {
+  margin: 5px 0;
+}
+.inputDiv input {
+  border: 1px solid var(--text_color);
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.submit_button {
+  display: block;
+  background-color: var(--main_color);
+  color: var(--white);
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin: 30px 0;
+}
+
+.forget_Pass {
+  display: block;
+  text-align: center;
+  margin: 30px auto;
+  background-color: transparent;
+  border: none;
+}
+.go_to_Register_Div {
+  margin: 0 auto;
+  text-align: center;
+}
+.go_to_regPage_button {
+  background-color: transparent;
+  border: none;
+  margin-right: 10px;
+  color: var(--main_color);
+  font-weight: bold;
+}
+
+.par {
+  color: var(--main_color);
+  text-align: center;
+}

@@ -1,0 +1,9 @@
+# Enable Compression
+DirectoryIndex disabled
+RewriteEngine On
+RewriteRule ^$ http://mohamed-ibrahiem.com:3008/ [P,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ http://mohamed-ibrahiem.com:3008/$1 [P,L]
+
+ 

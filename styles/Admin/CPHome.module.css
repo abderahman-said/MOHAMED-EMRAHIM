@@ -1,0 +1,67 @@
+.Mcp {
+  padding-top: 180px !important;
+}
+.AdminNav {
+  background-color: white;
+  border: 1px solid #e9e7e7;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-bottom: 10px;
+  /* padding: 20px 10px 5px */
+}
+.AdminNav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.AdminNav ul li {
+  width: 100%;
+  /* padding: 10px; */
+}
+.AdminNav ul li:not(:last-of-type){
+  border-bottom: 1px solid #e9e7e7;
+
+}
+.activeIcon {
+  transform: rotate(180deg);
+}
+.AdminNav ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+}
+.accHeading {
+  font-weight: bold;
+}
+.accHeading svg {
+  margin-left: 10px;
+}
+.AdminNav ul li a svg {
+  margin-left: 10px;
+}
+.active{
+  color: var(--main_color) !important;
+}
+.link2 {
+  color: black;
+}
+/* .accUlContainer {
+
+} */
+.Tabel td  , .Tabel th  {
+  text-align: center !important;
+  /* cursor: pointer !important; */
+
+}
+
+.Tabel {
+  margin-top: 50px;
+}

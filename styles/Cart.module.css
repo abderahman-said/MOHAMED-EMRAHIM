@@ -1,0 +1,140 @@
+.cart {
+  padding :160px 0 50px;
+}
+.center {
+  justify-content: space-between;
+}
+
+.main_Heading {
+  border-bottom: 3px solid var(--main_color);
+  width: fit-content;
+  margin: 0 auto 50px;
+  padding: 0 30px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_Heading span {
+  color: var(--white);
+  background-color: var(--main_color);
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.main_Heading span  svg {
+  font-size: 25px;
+}
+
+.Items_Container {
+  border: 1px solid #D8D8D8;
+}
+.item_product {
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.item_product:not(:last-of-type) {
+  border-bottom: 1px solid #D8D8D8;
+}
+.item_info_container {
+  display: flex;
+
+  flex-basis: 90%;
+}
+.Card_image {
+  margin-left: 10px;
+}
+
+/* .item_info p {
+  margin-bottom: 10px;
+} */
+.Product_Count {
+  border: 1px solid #D8D8D8;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  width: fit-content  ;
+}
+.Product_Count button {
+  background-color: transparent;
+  border: none;
+  padding: 5px 15px;
+}
+
+.delete_product {
+  color: var(--white);
+  background-color: var(--main_color);
+  width: 25px;
+  height: 25px;
+  line-height: 23px;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
+}
+.icon_delete {
+  font-size: 15px;
+}
+
+.TotlaPrice {
+  border: 1px solid #D8D8D8;
+  margin: 20px 0;
+}
+.TotlaPrice h3 {
+  border-bottom: 1px solid black;
+  padding: 10px;
+  /* margin-bottom: 15px; */
+  margin: 15px 10px;
+  width: fit-content;
+}
+.TotlaPrice div {
+  border-top: 1px solid #D8D8D8;
+  padding: 15px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.TotlaPrice div p {
+  margin: 0;
+}
+.contaniue_to_Shop {
+  width: 100%;
+  background-color: var(--main_color);
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+}
+.emptycenter {
+  justify-content: center;
+}
+.emptycenter h2 {
+  margin: 10px 0;
+  text-align: center;
+}
+/* .main_Heading span  */
+
+@media (min-width: 768px) { 
+  .item_info_container {
+    align-items: center;
+  }
+ }

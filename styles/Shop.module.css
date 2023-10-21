@@ -1,0 +1,227 @@
+
+.shop {
+  padding: 90px 0;
+  overflow: hidden;
+}
+.row_center {
+  overflow: hidden;
+  justify-content: center;
+}
+
+.Slick_Div_container {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  width:90%;
+  margin: 50px auto;
+  text-align: center;
+}
+.Image_container {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.SlickCatName {
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+}
+
+.SlickCatName:hover {
+  color: black !important;
+}
+
+@media (min-width: 768px) {
+  .shop {
+    padding: 150px 0;
+  }
+ }
+
+ /* @media (min-width: 768px) and (max-width: 1024px) { 
+   .column_style {
+  margin: 10px 20px !important;
+ }
+  } */
+  @media (min-width: 1025px) and (max-width: 1440px) { 
+    .column_style {
+    margin: 10px 0px !important;
+  }
+   }
+
+   .fontBold {
+    font-weight: 600;
+   }
+.Cats_Header {
+  font-size: 20px;
+  background-color: var(--white);
+  box-shadow: var(--box_shadow);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 25px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .Search {
+
+} */
+.Search input {
+  width: 80%;
+  margin-left: 20px;
+}
+.Search input:focus {
+  outline: none;
+} 
+.Search input , 
+.Search button {
+  background-color: #EBEBEB;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 10px ;
+  -webkit-border-radius: 10px ;
+  -moz-border-radius: 10px ;
+  -ms-border-radius: 10px ;
+  -o-border-radius: 10px ;
+}
+.Search button {
+  color: var(--main_color);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.Search button svg {
+  font-size: 30px;
+  margin-right: 5px;
+}
+.main_cats {
+  background-color: var(--white);
+  box-shadow: var(--box_shadow);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+ .ul_cats {
+  padding: 10px ;
+}
+.ul_cats li {
+  list-style: none;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+ .ul_cats li:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  color: var(--main_color) !important;
+}
+ .ul_cats li:not(:last-of-type) {
+  border-bottom: 1px solid var(--text_color);
+}
+.active {
+  color: red;
+}
+.custom {
+  color: black;
+}
+.SelectCat {
+  width:100%;
+}
+.SelectCat:focus {
+  outline: none;
+}
+.matger_option {
+  font-size: 10px;
+}
+
+.main_cats2 {
+  background-color: var(--white);
+  box-shadow: var(--box_shadow);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  height: 300px;
+  overflow: scroll;
+  margin-bottom: 20px;
+}
+
+
+
+@media (min-width: 10px) and (max-width: 765.98px) { 
+  .Search input , 
+  .Search button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .main_cats {
+    display: none;
+  }
+  .Cats_Header_Col {
+    display:none;
+  }
+  .Image_container {
+    width: 125px;
+    height: 125px;
+  }
+
+}
+
+@media (min-width: 768px)  { 
+  .SelectCat  {
+    display: none;
+  }
+  .cats_Select  {
+    display: none;
+  }
+ }
+ 
+@media (min-width:768px)  and  (max-width: 1190px)  { 
+  .SelectCat  {
+    display: none;
+  }
+  .cats_Select  {
+    display: none;
+  }
+  .Search input  {
+    width: 65%;
+    margin-bottom: 10px;
+
+  } 
+  .Search button {
+    width: 30%;
+    margin-bottom: 10px;
+  }
+ }
+
+ /* 1190 */
+ .ScrollLoading {
+  margin:  10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  direction: ltr;
+ }
+ .emptycenter {
+  padding-top: 50px;
+  justify-content: center;
+  align-items: center;
+ }
