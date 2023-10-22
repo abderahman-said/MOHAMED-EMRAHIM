@@ -413,7 +413,7 @@ const AllProducts = () => {
   };
   // console.log(seletedTest)
   // console.log(seletedTest)
-  let selectedImageId = null; // Define a variable to store the selected image's ID
+  let selectedImageId = null; 
 
   const SendData = () => {
     const data = {
@@ -423,7 +423,7 @@ const AllProducts = () => {
       code,
       description,
       images,
-      mainImage: selectedImageId, // Add the selected image's ID to the data
+      mainImage: "selectedImageId", // Add the selected image's ID to the data
     };
   
     dispatch(SaveProducts(data))
@@ -433,7 +433,7 @@ const AllProducts = () => {
         dispatch(GetALLProducts());
       });
   };
-  console.log( "SaveProducts(data)" , SaveProducts(data))
+  // console.log( "SaveProducts(data)" , SaveProducts(data))
 
   // UPDATE Dialog
   const renderUpdateFooter = (name) => {
@@ -503,6 +503,7 @@ const AllProducts = () => {
       available: +checked,
       description: updataDescription,
       images: updataImages,
+       mainImage: "selectedImageId", 
     };
     // console.log(data)
     dispatch(updateProduct(data))
