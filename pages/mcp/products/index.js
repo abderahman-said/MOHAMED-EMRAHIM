@@ -308,22 +308,32 @@ const AllProducts = () => {
     const result = images.filter((ele) => ele !== e);
     setImages(result);
   };
-  const ProductsImage =
-    images.length > 0 &&
-    images.map((ele, idx) => {
-      return (
-        <div className={styles.ImageDelete} key={idx}>
-          <Image
-            src={`data:image/jpeg;base64,${ele}`}
-            // src={`${Url}/imgs?id=${updateImage1}`}
-            width={50}
-            height={50}
-            alt={ele}
-          />
-          <TiDelete onClick={() => DeletImage(ele)} />
-        </div>
-      );
-    });
+  const ProductsImage = images.length > 0 && images.map((ele, idx) => {
+    const handleRadioChange = (event) => {
+      console.log(`Selected image ID: ${ele.id}`);
+      selectedImageId = ele.id;
+    };
+  
+    return (
+      <div className={styles.ImageDelete} key={idx}>
+        <Image
+          src={`data:image/jpeg;base64,${ele}`}
+          width={50}
+          height={50}
+          alt={ele}
+        />
+        <input
+          type="radio"
+          id={`image-radio-${idx}`}
+          name="image-radio"
+          value={ele.id}
+          onChange={handleRadioChange}
+        />
+        <TiDelete onClick={() => DeletImage(ele)} />
+      </div>
+    );
+  });
+  
   // const [CompanyID , setCompanyID] = useState("");
   const ParentCats =
     AllCatsArr && Array.from(new Set(AllCatsArr.map((a) => a)));
@@ -403,22 +413,27 @@ const AllProducts = () => {
   };
   // console.log(seletedTest)
   // console.log(seletedTest)
+  let selectedImageId = null; // Define a variable to store the selected image's ID
+
   const SendData = () => {
     const data = {
-      companyId: parseInt(companyID),
+      companyId: companyID ? parseInt(companyID) : null,
       catId: parseInt(catID),
       name,
       code,
       description,
       images,
+      mainImage: selectedImageId, // Add the selected image's ID to the data
     };
+  
     dispatch(SaveProducts(data))
       .unwrap()
       .then(() => {
-        ShowSuccess("تمت الاضافة بنجاح")
+        ShowSuccess("تمت الاضافة بنجاح");
         dispatch(GetALLProducts());
       });
   };
+  console.log( "SaveProducts(data)" , SaveProducts(data))
 
   // UPDATE Dialog
   const renderUpdateFooter = (name) => {
@@ -479,7 +494,7 @@ const AllProducts = () => {
 
   const SendUpdateData = () => {
     const data = {
-      companyId: parseInt(companyID),
+      companyId: companyID ? parseInt(companyID) : null,
       catId: parseInt(catID),
       id: ProductID,
       name: updataName,
@@ -852,8 +867,6 @@ const AllProducts = () => {
                 onChange={(e) => setDescription(e.target.value)}
               /> */}
               <Editor value={description}
-
-
                 onTextChange={(e) => setDescription(e.htmlValue)} style={{ height: '320px' }} />
             </div>
 
