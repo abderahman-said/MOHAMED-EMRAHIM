@@ -183,7 +183,7 @@ const Footer = () => {
           <a
             className={styels.rights_logo}
             href="https://deltawy.com/"
-            target="_blank"
+            // target="_blank"
           >
             {" "}
             <Image
